@@ -9,6 +9,64 @@
     <link href="https://unpkg.com/lucide@latest/icons.css" rel="stylesheet">
 </head>
 <body>
+    <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
+    <label class="mode-toggle" for="mode-checkbox">
+        <span class="toggle-icon"></span>
+    </label>
+    
+    <div class="portfolio-container dark-mode">
+        <!-- Copy the entire sidebar from index.html -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <h1 class="logo">Cynthia</h1>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="icon">🏠</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="icon">👤</i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html">
+                            <i class="icon">🔧</i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <i class="icon">💼</i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html">
+                            <i class="icon">✉️</i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="visit-site">
+                <a href="#" class="visit-btn">
+                    <i class="icon">↗️</i>
+                    <span>Visit site</span>
+                </a>
+            </div>
+        </aside>
+        <main class="main-content">
+
+       
+        
     <div class="contact-container">
         <div class="contact-header">
             <i data-lucide="sparkles" class="sparkles-icon"></i>
@@ -70,6 +128,7 @@
                 </form>
             </div>
         </div>
+    </main>
     </div>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>lucide.createIcons();</script>
