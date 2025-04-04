@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills & Technologies - Cynthia Muemi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
+  <label class="mode-toggle" for="mode-checkbox">
+      <span class="toggle-icon"></span>
+  </label>
+  
+  <!-- Theme color radio buttons -->
+  <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
+  <input type="radio" name="theme-color" id="color-pink" class="color-radio">
+  <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
+  <input type="radio" name="theme-color" id="color-blue" class="color-radio">
+  <input type="radio" name="theme-color" id="color-green" class="color-radio">
+  
+  <div class="portfolio-container dark-mode">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <h1 class="logo">Cynthia</h1>
+      </div>
+      
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-home icon"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <i class="fas fa-user icon"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="skills.html">
+              <i class="fas fa-lightbulb icon"></i>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="portfolio.html">
+              <i class="fas fa-briefcase icon"></i>
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <i class="fas fa-envelope icon"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <section class="page-header">
+          <h1>Skills & Technologies</h1>
+          <p class="page-intro">A comprehensive overview of my technical expertise and the tools I use to build innovative solutions.</p>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-stack-section">
+          <div class="tech-grid">
+            <!-- Frontend Development -->
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3>Frontend Development</h3>
+              <p class="tech-level">Advanced</p>
+              <p class="tech-description">
+                Building modern, responsive web applications with React and leveraging Next.js for server-side rendering and optimal performance.
+              </p>
+              <ul class="tech-list">
+                <li><i class="fab fa-react icon"></i> React & Next.js</li>
+                <li><i class="fab fa-css3 icon"></i> Tailwind CSS & Material-UI</li>
+                <li><i class="fas fa-code icon"></i> Redux & Context API</li>
+                <li><i class="fab fa-js icon"></i> TypeScript</li>
+                <li><i class="fas fa-vial icon"></i> Jest & Testing Library</li>
+              </ul>
+            </div>
+
+            <!-- Blockchain Development -->
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-link"></i>
+              </div>
+              <h3>Blockchain Development</h3>
+              <p class="tech-level">Advanced</p>
+              <p class="tech-description">
+                Developing secure smart contracts and decentralized applications for Web3.
+              </p>
+              <ul class="tech-list">
+                <li><i class="fas fa-file-code icon"></i> Solidity</li>
+                <li><i class="fas fa-globe icon"></i> Web3.js/Ethers.js</li>
+                <li><i class="fas fa-tools icon"></i> Hardhat/Truffle</li>
+                <li><i class="fas fa-database icon"></i> IPFS</li>
+                <li><i class="fas fa-shield-alt icon"></i> Smart Contract Security</li>
+              </ul>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Backend Development</h3>
+              <p class="tech-level">Intermediate</p>
+              <p class="tech-description">
+                Building scalable and secure RESTful APIs.
+              </p>
+              <ul class="tech-list">
+                <li><i class="fab fa-node-js icon"></i> Node.js & Express</li>
+                <li><i class="fas fa-database icon"></i> MongoDB</li>
+                <li><i class="fas fa-table icon"></i> PostgreSQL</li>
+                <li><i class="fas fa-lock icon"></i> API Security</li>
+                <li><i class="fas fa-diagram-project icon"></i> RESTful Architecture</li>
+              </ul>
+            </div>
+
+            <!-- DevOps & Cloud -->
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>DevOps & Cloud</h3>
+              <p class="tech-level">Intermediate</p>
+              <p class="tech-description">
+                Deploying and maintaining applications in cloud environments.
+              </p>
+              <ul class="tech-list">
+                <li><i class="fab fa-docker icon"></i> Docker</li>
+                <li><i class="fab fa-aws icon"></i> AWS Services</li>
+                <li><i class="fab fa-github icon"></i> GitHub Actions</li>
+                <li><i class="fas fa-rocket icon"></i> Vercel/Netlify</li>
+                <li><i class="fas fa-chart-line icon"></i> Cloud Monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Theme Color Labels -->
+        <section class="theme-section">
+          <h3 class="theme-title">Theme Colors</h3>
+          
+          <div class="color-options">
+            <label for="color-orange" class="color-btn" style="background-color: #FF5722;" aria-label="Orange theme"></label>
+            <label for="color-pink" class="color-btn" style="background-color: #E91E63;" aria-label="Pink theme"></label>
+            <label for="color-magenta" class="color-btn" style="background-color: #FF4081;" aria-label="Magenta theme"></label>
+            <label for="color-blue" class="color-btn" style="background-color: #2196F3;" aria-label="Blue theme"></label>
+            <label for="color-green" class="color-btn" style="background-color: #4CAF50;" aria-label="Green theme"></label>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
