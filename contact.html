@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/lucide@latest/icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <i data-lucide="sparkles" class="sparkles-icon"></i>
+            <h1>Let's Create Together</h1>
+            <p>Have a project in mind? Let's discuss how we can make it happen.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i data-lucide="mail"></i>
+                    <h3>Email Me At</h3>
+                    <p>Cynthiamuemi@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <i data-lucide="phone"></i>
+                    <h3>Call Me At</h3>
+                    <p>+254714296157</p>
+                </div>
+                <div class="info-card">
+                    <i data-lucide="message-circle"></i>
+                    <h3>Response Time</h3>
+                    <p>Within 24 hours</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <div class="input-with-icon">
+                                <i data-lucide="user"></i>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-with-icon">
+                                <i data-lucide="mail"></i>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-with-icon">
+                            <i data-lucide="file-text"></i>
+                            <input type="text" id="subject" name="subject" placeholder="Project subject" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i data-lucide="send"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

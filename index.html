@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cynthia  Muemi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input type="checkbox" id="mode-checkbox" class="hidden-checkbox"> 
+  <div class="portfolio-container dark-mode">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <h1 class="logo">Pree</h1>
+      </div>
+      
+      <nav class="menu">
+        <ul>
+          <li class="active">
+            <a href="index.html">
+              <i class="icon">🏠</i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <i class="icon">👤</i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="services.html">
+              <i class="icon">🔧</i>
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="portfolio.html">
+              <i class="icon">💼</i>
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <i class="icon">✉️</i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="visit-site">
+        <a href="#" class="visit-btn">
+          <i class="icon">↗️</i>
+          <span>Visit site</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-image-container">
+            <div class="theme-corner top-right"></div>
+            <div class="theme-corner bottom-left"></div>
+            <div class="profile-image">
+              <img src="profile.jpg" alt="Profile Picture" class="profile-image">
+            </div>
+            <label class="mode-toggle" for="mode-checkbox">
+              <span class="toggle-icon"></span>
+            </label>
+          </div>
+
+          <div class="hero-content">
+            <div class="intro">
+              <h1 class="greeting">Hello, my name is <span class="name">Cynthia Muemi</span></h1>
+              
+              <h2 class="role">
+                I'm a <span class="typewriter">Smart contract Developer</span>
+              </h2>
+              
+              <p class="bio">
+                I'm a Blockchain Developer, Software Engineer, and Community Lead, passionate about building
+                decentralized solutions and mentoring developers in the Web3 space. I specialize in smart contract development,
+                blockchain security, and integrating Web2 systems with Web3 technologies.
+              </p>
+
+              <a href="about.html" class="cta-button">
+                More About Me
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Theme Colors -->
+        <section class="theme-section">
+          <h3 class="theme-title">Theme Colors</h3>
+          
+          <div class="color-options">
+            <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
+            <label for="color-orange" class="color-btn" style="background-color: #FF5722;" aria-label="Orange theme"></label>
+            
+            <input type="radio" name="theme-color" id="color-pink" class="color-radio">
+            <label for="color-pink" class="color-btn" style="background-color: #E91E63;" aria-label="Pink theme"></label>
+            
+            <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
+            <label for="color-magenta" class="color-btn" style="background-color: #FF4081;" aria-label="Magenta theme"></label>
+            
+            <input type="radio" name="theme-color" id="color-blue" class="color-radio">
+            <label for="color-blue" class="color-btn" style="background-color: #2196F3;" aria-label="Blue theme"></label>
+            
+            <input type="radio" name="theme-color" id="color-green" class="color-radio">
+            <label for="color-green" class="color-btn" style="background-color: #4CAF50;" aria-label="Green theme"></label>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
