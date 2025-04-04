@@ -9,10 +9,17 @@
 </head>
 <body>
   <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
-<label class="mode-toggle" for="mode-checkbox">
-    <span class="toggle-icon"></span>
-</label>
-
+  <label class="mode-toggle" for="mode-checkbox">
+      <span class="toggle-icon"></span>
+  </label>
+  
+  <!-- Theme color radio buttons -->
+  <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
+  <input type="radio" name="theme-color" id="color-pink" class="color-radio">
+  <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
+  <input type="radio" name="theme-color" id="color-blue" class="color-radio">
+  <input type="radio" name="theme-color" id="color-green" class="color-radio">
+  
   <div class="portfolio-container dark-mode">
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -73,7 +80,7 @@
           <!-- SkillPulse Project -->
           <div class="project-card">
               <div class="project-image">
-                  <img src="https://via.placeholder.com/300" alt="SkillPulse Project">
+                  <img src="skillpulse.png" alt="SkillPulse Project">
               </div>
               <div class="project-details">
                   <h3 class="project-title">SkillPulse Blockchain Education Platform</h3>
@@ -89,7 +96,7 @@
                           <span class="link-icon">💻</span>
                           GitHub
                       </a>
-                      <a href="https://drive.google.com/file/d/1K0x6NTPKF6lrpw-lPwDn1kUmIhJBG56y/view?usp=sharing" class="project-link">
+                      <a href="https://skillpulse-blockchain.vercel.app" class="project-link">
                           <span class="link-icon">🔍</span>
                           Demo
                       </a>
@@ -100,7 +107,7 @@
           <!-- AI Insurance Underwriting Project -->
           <div class="project-card">
               <div class="project-image">
-                  <img src="https://via.placeholder.com/300" alt="AI Insurance Underwriting">
+                  <img src="concept.PNG" alt="AI Insurance Underwriting">
               </div>
               <div class="project-details">
                   <h3 class="project-title">AI Insurance Underwriting</h3>
@@ -123,7 +130,7 @@
           <!-- Endocare Project -->
           <div class="project-card">
               <div class="project-image">
-                  <img src="https://via.placeholder.com/300" alt="Endocare Project">
+                  <img src="Endocare.png" alt="Endocare Project">
               </div>
               <div class="project-details">
                   <h3 class="project-title">Endocare</h3>
@@ -150,7 +157,7 @@
           <!-- Erecords Project -->
           <div class="project-card">
               <div class="project-image">
-                  <img src="https://via.placeholder.com/300" alt="Erecords Project">
+                  <img src="Erecords.png" alt="Erecords Project">
               </div>
               <div class="project-details">
                   <h3 class="project-title">Erecords</h3>
@@ -172,8 +179,7 @@
                   </div>
               </div>
           </div>
-
-          <div class="project-card">
+          <!-- <div class="project-card">
             <div class="project-image"></div>
             <div class="project-details">
               <h3 class="project-title">Portfolio Website</h3>
@@ -197,25 +203,16 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Theme Colors -->
+        </div> -->
+        <!-- Theme Color Labels -->
         <section class="theme-section">
           <h3 class="theme-title">Theme Colors</h3>
           
           <div class="color-options">
-            <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
             <label for="color-orange" class="color-btn" style="background-color: #FF5722;" aria-label="Orange theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-pink" class="color-radio">
             <label for="color-pink" class="color-btn" style="background-color: #E91E63;" aria-label="Pink theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
             <label for="color-magenta" class="color-btn" style="background-color: #FF4081;" aria-label="Magenta theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-blue" class="color-radio">
             <label for="color-blue" class="color-btn" style="background-color: #2196F3;" aria-label="Blue theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-green" class="color-radio">
             <label for="color-green" class="color-btn" style="background-color: #4CAF50;" aria-label="Green theme"></label>
           </div>
         </section>

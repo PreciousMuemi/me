@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Precious Muemi</title>
+  <title>Services -cynthia Muemi</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
-<label class="mode-toggle" for="mode-checkbox">
-    <span class="toggle-icon"></span>
-</label>
-
+  <label class="mode-toggle" for="mode-checkbox">
+      <span class="toggle-icon"></span>
+  </label>
+  
+  <!-- Theme color radio buttons -->
+  <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
+  <input type="radio" name="theme-color" id="color-pink" class="color-radio">
+  <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
+  <input type="radio" name="theme-color" id="color-blue" class="color-radio">
+  <input type="radio" name="theme-color" id="color-green" class="color-radio">
+  
   <div class="portfolio-container dark-mode">
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -126,24 +133,15 @@
           </div>
         </div>
 
-        <!-- Theme Colors -->
+        <!-- Theme Color Labels -->
         <section class="theme-section">
           <h3 class="theme-title">Theme Colors</h3>
           
           <div class="color-options">
-            <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
             <label for="color-orange" class="color-btn" style="background-color: #FF5722;" aria-label="Orange theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-pink" class="color-radio">
             <label for="color-pink" class="color-btn" style="background-color: #E91E63;" aria-label="Pink theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
             <label for="color-magenta" class="color-btn" style="background-color: #FF4081;" aria-label="Magenta theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-blue" class="color-radio">
             <label for="color-blue" class="color-btn" style="background-color: #2196F3;" aria-label="Blue theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-green" class="color-radio">
             <label for="color-green" class="color-btn" style="background-color: #4CAF50;" aria-label="Green theme"></label>
           </div>
         </section>

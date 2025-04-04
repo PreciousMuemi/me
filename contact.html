@@ -9,12 +9,19 @@
     <link href="https://unpkg.com/lucide@latest/icons.css" rel="stylesheet">
 </head>
 <body>
-    <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
-    <label class="mode-toggle" for="mode-checkbox">
-        <span class="toggle-icon"></span>
-    </label>
-    
-    <div class="portfolio-container dark-mode">
+  <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
+  <label class="mode-toggle" for="mode-checkbox">
+      <span class="toggle-icon"></span>
+  </label>
+  
+  <!-- Theme color radio buttons -->
+  <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
+  <input type="radio" name="theme-color" id="color-pink" class="color-radio">
+  <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
+  <input type="radio" name="theme-color" id="color-blue" class="color-radio">
+  <input type="radio" name="theme-color" id="color-green" class="color-radio">
+  
+  <div class="portfolio-container dark-mode">
         <!-- Copy the entire sidebar from index.html -->
         <aside class="sidebar">
             <div class="logo-container">
@@ -61,8 +68,8 @@
                     <i class="icon">↗️</i>
                     <span>Visit site</span>
                 </a>
-            </div>
-        </aside> -->
+            </div> -->
+        </aside>
         <main class="main-content">
     <div class="contact-container">
         <div class="contact-header">

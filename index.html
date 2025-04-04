@@ -13,6 +13,13 @@
       <span class="toggle-icon"></span>
   </label>
   
+  <!-- Theme color radio buttons -->
+  <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
+  <input type="radio" name="theme-color" id="color-pink" class="color-radio">
+  <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
+  <input type="radio" name="theme-color" id="color-blue" class="color-radio">
+  <input type="radio" name="theme-color" id="color-green" class="color-radio">
+  
   <div class="portfolio-container dark-mode">
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -55,12 +62,12 @@
         </ul>
       </nav>
       
-      <!-- <div class="visit-site">
+      <div class="visit-site">
         <a href="#" class="visit-btn">
           <i class="icon">↗️</i>
           <span>Visit site</span>
         </a>
-      </div> -->
+      </div>
     </aside>
 
     <!-- Main Content -->
@@ -84,13 +91,12 @@
               <h1 class="greeting">Hello, my name is <span class="name">Cynthia Muemi</span></h1>
               
               <h2 class="role">
-                I'm a <span class="typewriter">Smart contract Developer</span>
+                I'm a <span class="typewriter" data-words='["Smart Contract Developer", "Blockchain Developer", "Software Engineer", "Community Lead"]'></span>
               </h2>
               
               <p class="bio">
-                I'm a Blockchain Developer, Software Engineer, and Community Lead, passionate about building
-                decentralized solutions and mentoring developers in the Web3 space. I specialize in smart contract development,
-                blockchain security, and integrating Web2 systems with Web3 technologies.
+                Passionate about building decentralized solutions and mentoring developers in the Web3 space. 
+                I specialize in smart contract development, blockchain security, and integrating Web2 systems with Web3 technologies.
               </p>
 
               <a href="about.html" class="cta-button">
@@ -100,29 +106,53 @@
           </div>
         </section>
 
-        <!-- Theme Colors -->
+        <!-- Theme Color Labels -->
         <section class="theme-section">
           <h3 class="theme-title">Theme Colors</h3>
           
           <div class="color-options">
-            <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
             <label for="color-orange" class="color-btn" style="background-color: #FF5722;" aria-label="Orange theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-pink" class="color-radio">
             <label for="color-pink" class="color-btn" style="background-color: #E91E63;" aria-label="Pink theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
             <label for="color-magenta" class="color-btn" style="background-color: #FF4081;" aria-label="Magenta theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-blue" class="color-radio">
             <label for="color-blue" class="color-btn" style="background-color: #2196F3;" aria-label="Blue theme"></label>
-            
-            <input type="radio" name="theme-color" id="color-green" class="color-radio">
             <label for="color-green" class="color-btn" style="background-color: #4CAF50;" aria-label="Green theme"></label>
           </div>
         </section>
       </div>
     </main>
   </div>
+  <script>
+    // Typewriter effect for multiple roles
+    document.addEventListener('DOMContentLoaded', function() {
+      const typewriterElement = document.querySelector('.typewriter');
+      const words = JSON.parse(typewriterElement.getAttribute('data-words'));
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 100;
+
+      function type() {
+        const currentWord = words[wordIndex];
+        const currentText = currentWord.substring(0, charIndex);
+        typewriterElement.textContent = currentText;
+
+        if (!isDeleting && charIndex < currentWord.length) {
+          charIndex++;
+          setTimeout(type, typingSpeed);
+        } else if (isDeleting && charIndex > 0) {
+          charIndex--;
+          setTimeout(type, typingSpeed / 2);
+        } else {
+          isDeleting = !isDeleting;
+          if (!isDeleting) {
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+          setTimeout(type, typingSpeed);
+        }
+      }
+
+      type();
+    });
+  </script>
 </body>
 </html>
