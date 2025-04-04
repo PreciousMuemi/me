@@ -1019,10 +1019,14 @@ color: white;
     padding: 2rem;
     background: var(--background-color);
     color: var(--text-color);
-    min-height: calc(100vh - 140px);
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: calc(100vh - 140px);
+    overflow: hidden;
     position: relative;
+  }
+
+  .contact-content {
+    height: 100%;
+    overflow: hidden;
   }
 
   .contact-content {
