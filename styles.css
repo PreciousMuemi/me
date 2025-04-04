@@ -1195,59 +1195,124 @@ color: white;
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  /* Mobile sidebar */
   .sidebar {
-    width: 70px;
-    padding: 1rem 0.5rem;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    padding: 0.5rem;
+    flex-direction: row;
+    z-index: 100;
   }
-  
-  .sidebar span {
+
+  .logo-container {
     display: none;
   }
-  
+
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+
   .menu a {
-    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
-  
+
   .menu .icon {
-    margin-right: 0;
+    margin: 0 0 0.2rem 0;
+    font-size: 1.2rem;
   }
-  
+
+  /* Main content adjustments */
   .main-content,
   .about-container,
   .services-container,
   .portfolio-projects-container,
   .contact-container {
-    margin-left: 70px;
+    margin: 0;
     padding: 1rem;
-  }
-  
-  .greeting {
-    font-size: 2rem;
-  }
-  
-  .role {
-    font-size: 1.5rem;
+    padding-bottom: 70px; /* Space for bottom navbar */
   }
 
-  .contact-container {
+  /* Hero section */
+  .hero-section {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .hero-image-container {
     width: 100%;
-    margin-left: 70px;
-    padding: 1rem;
+    height: 300px;
+    margin-bottom: 1rem;
   }
 
-  .contact-content {
-    padding: 1rem;
-  }
-
+  /* Contact page */
   .contact-info {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
+  .info-card {
+    padding: 1rem;
+  }
+
+  /* Forms */
   .form-row {
     grid-template-columns: 1fr;
   }
 
-  .contact-form {
-    padding: 1.5rem;
+  /* Text sizing */
+  .greeting {
+    font-size: 1.8rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Services grid */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 0.7rem;
+  }
+
+  .menu .icon {
+    font-size: 1rem;
+  }
+
+  .hero-image-container {
+    height: 250px;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
   }
 }
