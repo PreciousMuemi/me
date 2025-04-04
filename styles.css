@@ -430,28 +430,33 @@ font-weight: 700;
   transform: scale(1.1);
   border-color: white;
 }
+/* Theme color switching */
+:root[data-theme="orange"] { --theme-color: #FF5722; }
+:root[data-theme="pink"] { --theme-color: #E91E63; }
+:root[data-theme="magenta"] { --theme-color: #FF4081; }
+:root[data-theme="blue"] { --theme-color: #2196F3; }
+:root[data-theme="green"] { --theme-color: #4CAF50; }
 
-/* Create theme color switching with CSS only */
-#color-orange:checked ~ * {
-  --theme-color: #FF5722;
+.color-radio:checked + .color-btn {
+    transform: scale(1.2);
+    border: 2px solid var(--theme-color);
 }
 
-#color-pink:checked ~ * {
-  --theme-color: #E91E63;
-}
+/* Store theme selection in localStorage */
+/* Removed JavaScript logic from CSS. Handle theme selection in JavaScript. */
+/* Pure CSS solution for theme persistence */
+[data-theme="orange"] { --theme-color: #FF5722; }
+[data-theme="pink"] { --theme-color: #E91E63; }
+[data-theme="magenta"] { --theme-color: #FF4081; }
+[data-theme="blue"] { --theme-color: #2196F3; }
+[data-theme="green"] { --theme-color: #4CAF50; }
 
-#color-magenta:checked ~ * {
-  --theme-color: #FF4081;
-}
-
-#color-blue:checked ~ * {
-  --theme-color: #2196F3;
-}
-
-#color-green:checked ~ * {
-  --theme-color: #4CAF50;
-}
-
+/* Add a class to the root element to switch themes */
+html[data-theme="orange"] { --theme-color: #FF5722; }
+html[data-theme="pink"] { --theme-color: #E91E63; }
+html[data-theme="magenta"] { --theme-color: #FF4081; }
+html[data-theme="blue"] { --theme-color: #2196F3; }
+html[data-theme="green"] { --theme-color: #4CAF50; }
 /* Apply theme color to all themed elements */
 .name, 
 .typewriter::after, 
@@ -477,7 +482,6 @@ font-weight: 700;
 .tab-button.active {
   background-color: var(--theme-color);
 }
-
 /* About Page Styles */
 .about-content {
   display: flex;
@@ -609,7 +613,7 @@ font-weight: 700;
 
 .period {
   opacity: 0.7;
-  font-size: 0.9rem;
+font-size: 0.9rem;
 }
 
 /* Experience Section */
@@ -641,47 +645,43 @@ color: white;
 }
 
 .experience-items {
+  display: none;
   background: var(--dark-surface);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
   margin-top: 1rem;
 }
 
+/* Show selected tab content */
+#general-tab:checked ~ .tab-content #general-content,
+#voluntary-tab:checked ~ .tab-content #voluntary-content,
+#hired-tab:checked ~ .tab-content #hired-content {
+  display: block;
+}
+
 .experience-item {
-  background: var(--dark-surface);
+  margin-bottom: 2rem;
   padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  margin-bottom: 1.5rem;
 }
 
 .position {
-  color: var(--theme-color);
   font-size: 1.2rem;
+  color: var(--theme-color);
   margin-bottom: 0.5rem;
 }
 
 .role {
-  color: var(--text-light);
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .description {
-  color: var(--text-light);
-  opacity: 0.8;
   line-height: 1.6;
+  opacity: 0.8;
 }
-
-/* Update the tab display logic */
-.tab-content .experience-items {
-  display: none;
-}
-
-#general-tab:checked ~ .tab-content #general-content,
-#voluntary-tab:checked ~ .tab-content #voluntary-content,
-#hired-tab:checked ~ .tab-content #hired-content {
-  display: block !important;
-}/* Services Page Styles */
+/* Services Page Styles */
 .services-header {
   text-align: center;
   margin-bottom: 3rem;
