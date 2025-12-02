@@ -1,4 +1,3 @@
-
 /* CSS Reset */
 * {
   margin: 0;
@@ -237,6 +236,7 @@ body, html {
   object-fit: cover;
 }
 
+/* Mode Toggle Button */
 .mode-toggle {
   position: fixed;
   top: 2rem;
@@ -244,19 +244,54 @@ body, html {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 1.2rem;
+  background-color: var(--dark-surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.mode-toggle:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.toggle-icon::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+/* Dark mode icon */
+#mode-checkbox:not(:checked) ~ .portfolio-container .toggle-icon::before {
+  content: "\f186"; /* Moon icon */
+  color: #ffffff;
+}
+
+/* Light mode icon */
+#mode-checkbox:checked ~ .portfolio-container .toggle-icon::before {
+  content: "\f185"; /* Sun icon */
+  color: #333333;
+}
+
+/* Dark/Light Mode Toggle */
+#mode-checkbox:checked ~ .portfolio-container {
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+#mode-checkbox:not(:checked) ~ .portfolio-container {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+/* Toggle button background changes */
+#mode-checkbox:checked ~ .portfolio-container .mode-toggle {
+  background-color: var(--light-surface);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#mode-checkbox:not(:checked) ~ .portfolio-container .mode-toggle {
+  background-color: var(--dark-surface);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .hidden-checkbox {
@@ -269,28 +304,6 @@ body, html {
   align-items: center;
   width: 100%;
   height: 100%;
-}
-
-#mode-checkbox:checked ~ .portfolio-container {
-  background-color: var(--light-bg);
-  color: var(--text-dark);
-}
-
-#mode-checkbox:checked ~ .portfolio-container .sidebar {
-  background-color: var(--light-surface);
-}
-
-#mode-checkbox:checked ~ .portfolio-container .logo,
-#mode-checkbox:checked ~ .portfolio-container .menu a {
-  color: var(--text-dark);
-}
-
-#mode-checkbox:checked ~ .portfolio-container .toggle-icon::before {
-  content: "☀️";
-}
-
-#mode-checkbox:not(:checked) ~ .portfolio-container .toggle-icon::before {
-  content: "🌙";
 }
 
 /* Hero Content */

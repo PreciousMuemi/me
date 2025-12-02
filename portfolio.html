@@ -1,32 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Precious Muemi</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <input type="checkbox" id="mode-checkbox" class="hidden-checkbox">
   <label class="mode-toggle" for="mode-checkbox">
-      <span class="toggle-icon"></span>
+    <span class="toggle-icon"></span>
   </label>
-  
+
   <!-- Theme color radio buttons -->
   <input type="radio" name="theme-color" id="color-orange" class="color-radio" checked>
   <input type="radio" name="theme-color" id="color-pink" class="color-radio">
   <input type="radio" name="theme-color" id="color-magenta" class="color-radio">
   <input type="radio" name="theme-color" id="color-blue" class="color-radio">
   <input type="radio" name="theme-color" id="color-green" class="color-radio">
-  
+
   <div class="portfolio-container dark-mode">
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo-container">
         <h1 class="logo">Cynthia</h1>
       </div>
-      
+
       <nav class="menu">
         <ul>
           <li>
@@ -46,8 +47,7 @@
               <i class="icon">💡</i>
               <span>Skills</span>
             </a>
-            </li>
-
+          </li>
           <li>
             <a href="services.html">
               <i class="icon">🔧</i>
@@ -66,16 +66,8 @@
               <span>Contact</span>
             </a>
           </li>
-          
         </ul>
       </nav>
-      
-      <!-- <div class="visit-site">
-        <a href="#" class="visit-btn">
-          <i class="icon">↗️</i>
-          <span>Visit site</span>
-        </a>
-      </div> -->
     </aside>
 
     <!-- Main Content -->
@@ -83,7 +75,9 @@
       <div class="projects-content">
         <div class="intro-text">
           <h2>Things I've made trying to put my dent in the universe.</h2>
-          <p>Just a few things I've built while trying to leave my mark on the world. I've worked on plenty of random projects over time, but these ones? They hit different. Most are open-source—so if something catches your eye, feel free to dive into the code or drop your ideas. Let's build better, together.</p>
+          <p>Just a few things I've built while trying to leave my mark on the world. I've worked on plenty of random
+            projects over time, but these ones? They hit different. Most are open-source—so if something catches your
+            eye, feel free to dive into the code or drop your ideas. Let's build better, together.</p>
         </div>
         <header class="projects-header">
           <h1 class="section-title">Featured Projects</h1>
@@ -91,145 +85,235 @@
         <div class="projects-grid">
           <!-- SkillPulse Project -->
           <div class="project-card">
-              <div class="project-image">
-                <img src="./images/skillpulse.png" alt="SkillPulse Project">
-              </div>
-              <div class="project-details">
-                  <h3 class="project-title">SkillPulse Blockchain Education Platform</h3>
-                  <p class="project-description">Decentralized learning management system built on Internet Computer Protocol</p>
-                  <div class="project-tech">
-                      <span class="tech-tag">Motoko</span>
-                      <span class="tech-tag">React</span>
-                      <span class="tech-tag">ICP</span>
-                      <span class="tech-tag">TypeScript</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/PreciousMuemi/SkillPulse_Blockchain" class="project-link">
-                          <span class="link-icon">💻</span>
-                          GitHub
-                      </a>
-                      <a href="https://skillpulse-blockchain.vercel.app" class="project-link">
-                          <span class="link-icon">🔍</span>
-                          Demo
-                      </a>
-                  </div>
-              </div>
-          </div>
-
-          <!-- AI Insurance Underwriting Project -->
-          <div class="project-card">
-              <div class="project-image">
-                  <img src="./images/concept.PNG" alt="AI Insurance Underwriting">
-              </div>
-              <div class="project-details">
-                  <h3 class="project-title">AI Insurance Underwriting</h3>
-                  <p class="project-description">Machine learning model for automated risk assessment and policy pricing</p>
-                  <div class="project-tech">
-                      <span class="tech-tag">Python</span>
-                      <span class="tech-tag">TensorFlow</span>
-                      <span class="tech-tag">Django</span>
-                      <span class="tech-tag">PostgreSQL</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/PreciousMuemi/facultative-underwritting" class="project-link">
-                          <span class="link-icon">💻</span>
-                          GitHub
-                      </a>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Endocare Project -->
-          <div class="project-card">
-              <div class="project-image">
-                <img src="./images/Endocare.png" alt="Endocare Project">
-              </div>
-              <div class="project-details">
-                  <h3 class="project-title">Endocare</h3>
-                  <p class="project-description">Mobile health records management system for endocrinology clinics</p>
-                  <div class="project-tech">
-                      <span class="tech-tag">Tailwind</span>
-                      <span class="tech-tag">React Native</span>
-                      <span class="tech-tag">Firebase</span>
-                      <span class="tech-tag">Node.js</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/Wamziss/EndoCare" class="project-link">
-                          <span class="link-icon">💻</span>
-                          GitHub
-                      </a>
-                      <a href="https://endo-care.vercel.app" class="project-link">
-                          <span class="link-icon">🔍</span>
-                          Demo
-                      </a>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Erecords Project -->
-          <div class="project-card">
-              <div class="project-image">
-                <img src="./images/Erecords.png" alt="Erecords Project">
-              </div>
-              <div class="project-details">
-                  <h3 class="project-title">Erecords</h3>
-                  <p class="project-description">A decentralized document management system that allows users to securely store, share, and manage their documents using blockchain technology</p>
-                  <div class="project-tech">
-                      <span class="tech-tag">React</span>
-                      <span class="tech-tag">ICP</span>
-                      <span class="tech-tag">IPFS</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://github.com/Wamziss/ERecords" class="project-link">
-                          <span class="link-icon">💻</span>
-                          GitHub
-                      </a>
-                      <a href="https://mkhvf-lyaaa-aaaal-qjqfq-cai.icp0.io" class="project-link">
-                          <span class="link-icon">🔍</span>
-                          Demo
-                      </a>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="project-card">
-            <div class="project-image"></div>
+            <div class="project-image">
+              <img src="./images/skillpulse.png" alt="SkillPulse Project">
+            </div>
             <div class="project-details">
-              <h3 class="project-title">Portfolio Website</h3>
-              <p class="project-description">Personal portfolio website showcasing projects and skills</p>
-              
+              <h3 class="project-title">SkillPulse Blockchain Education Platform</h3>
+              <p class="project-description">Decentralized learning management system built on Internet Computer
+                Protocol</p>
               <div class="project-tech">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">Animation</span>
+                <span class="tech-tag">Motoko</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">ICP</span>
+                <span class="tech-tag">TypeScript</span>
               </div>
-              
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span class="link-icon">💻</span>
-                  GitHub
-                </a>
-                <a href="#" class="project-link">
+                <!-- <a href="https://github.com/PreciousMuemi/SkillPulse_Blockchain" class="project-link">
+                          <span class="link-icon">💻</span>
+                          GitHub
+                      </a> -->
+                <a href="https://skillpulse-blockchain.vercel.app" class="project-link">
                   <span class="link-icon">🔍</span>
                   Demo
                 </a>
               </div>
             </div>
           </div>
-        </div> -->
+
+          <!-- AI Insurance Underwriting Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/concept.PNG" alt="AI Insurance Underwriting">
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">AI Insurance Underwriting</h3>
+              <p class="project-description">Machine learning model for automated risk assessment and policy pricing</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <!-- <a href="https://github.com/PreciousMuemi/facultative-underwritting" class="project-link">
+                          <span class="link-icon">💻</span>
+                          GitHub
+                      </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Endocare Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/Endocare.png" alt="Endocare Project">
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Endocare</h3>
+              <p class="project-description">Mobile health records management system for endocrinology clinics</p>
+              <div class="project-tech">
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <div class="project-links">
+                <!-- <a href="https://github.com/Wamziss/EndoCare" class="project-link">
+                          <span class="link-icon">💻</span>
+                          GitHub
+                      </a> -->
+                <a href="https://endo-care.vercel.app" class="project-link">
+                  <span class="link-icon">🔍</span>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Erecords Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/Erecords.png" alt="Erecords Project">
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Erecords</h3>
+              <p class="project-description">A decentralized document management system that allows users to securely
+                store, share, and manage their documents using blockchain technology</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">ICP</span>
+                <span class="tech-tag">IPFS</span>
+              </div>
+              <div class="project-links">
+                <!-- <a href="https://github.com/Wamziss/ERecords" class="project-link">
+                          <span class="link-icon">💻</span>
+                          GitHub
+                      </a> -->
+                <a href="https://mkhvf-lyaaa-aaaal-qjqfq-cai.icp0.io" class="project-link">
+                  <span class="link-icon">🔍</span>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- MNTN Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Placeholder image, user should update -->
+              <div
+                style="width: 100%; height: 100%; background-color: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                MNTN Design
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">MNTN - Landing Page</h3>
+              <p class="project-description">A modern landing page design and prototype for a community platform.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">UI/UX</span>
+                <span class="tech-tag">Prototyping</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.figma.com/proto/QfWeoQbiMrHKIW6lB1Fn3P/MNTN---Landing-Page--Community-?node-id=1-2&p=f&t=Hp1Kr0PB4pa5EH88-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                  class="project-link" target="_blank">
+                  <span class="link-icon">🎨</span>
+                  View Design
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mali Ecommerce Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Placeholder image, user should update -->
+              <div
+                style="width: 100%; height: 100%; background-color: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                Mali Ecommerce
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Mali Ecommerce</h3>
+              <p class="project-description">A full-featured ecommerce web application for online shopping.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Frontend</span>
+              </div>
+              <div class="project-links">
+                <a href="https://mali-ecommerce.vercel.app/" class="project-link" target="_blank">
+                  <span class="link-icon">🔍</span>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forest Guardian Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Placeholder image, user should update -->
+              <div
+                style="width: 100%; height: 100%; background-color: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                Forest Guardian
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Forest Guardian</h3>
+              <p class="project-description">A web application dedicated to forest conservation and monitoring.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Conservation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://forest-guardian-henna.vercel.app/" class="project-link" target="_blank">
+                  <span class="link-icon">🔍</span>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presana Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Placeholder image, user should update -->
+              <div
+                style="width: 100%; height: 100%; background-color: #333; display: flex; align-items: center; justify-content: center; color: #fff;">
+                Presana
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Presana</h3>
+              <p class="project-description">A Web3-native event and community platform (formerly Suilens) on the Sui
+                network.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Sui</span>
+                <span class="tech-tag">Move</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <div class="project-links">
+                <a href="https://presana.xyz/" class="project-link" target="_blank">
+                  <span class="link-icon">🔍</span>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Theme Color Labels -->
         <section class="theme-section">
           <h3 class="theme-title">Theme Colors</h3>
-          
+
           <div class="color-options">
-            <label for="color-orange" class="color-btn" style="background-color: #FF5722;" aria-label="Orange theme"></label>
-            <label for="color-pink" class="color-btn" style="background-color: #E91E63;" aria-label="Pink theme"></label>
-            <label for="color-magenta" class="color-btn" style="background-color: #FF4081;" aria-label="Magenta theme"></label>
-            <label for="color-blue" class="color-btn" style="background-color: #2196F3;" aria-label="Blue theme"></label>
-            <label for="color-green" class="color-btn" style="background-color: #4CAF50;" aria-label="Green theme"></label>
+            <label for="color-orange" class="color-btn" style="background-color: #FF5722;"
+              aria-label="Orange theme"></label>
+            <label for="color-pink" class="color-btn" style="background-color: #E91E63;"
+              aria-label="Pink theme"></label>
+            <label for="color-magenta" class="color-btn" style="background-color: #FF4081;"
+              aria-label="Magenta theme"></label>
+            <label for="color-blue" class="color-btn" style="background-color: #2196F3;"
+              aria-label="Blue theme"></label>
+            <label for="color-green" class="color-btn" style="background-color: #4CAF50;"
+              aria-label="Green theme"></label>
           </div>
         </section>
       </div>
     </main>
   </div>
 </body>
+
 </html>
